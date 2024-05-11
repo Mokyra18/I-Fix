@@ -3,4 +3,5 @@
 - NIM    : 1217050081
 - Kelas  : B
 
-Demo: https://i-fix-gamma.vercel.app/
+- Demo: https://i-fix-gamma.vercel.app/
+- Penjelasan: https://youtu.be/YRebFtxUF1k
