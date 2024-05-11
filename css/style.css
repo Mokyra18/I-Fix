@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom CSS */
+.custom-navbar {
+    background-color: #ff6b4b; /* Change background color to a reddish orange */
+    color: #ff6b4b; /* Change text color */
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ff6b4b; /* Change background color to a reddish orange */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.navbar-brand:hover {
+    background-color: #ff8c6b; /* Change background color on hover to a lighter reddish orange */
+}
+
+.navbar-brand span {
+    color: #fff; /* Change text color to white */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b4b; /* Change background color to a reddish orange */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.btn:hover {
+    background-color: #ff8c6b; /* Change background color on hover to a lighter reddish orange */
+}
+
+.hero {
+    background-color: #FFE4C4; /* Change background color */
+    padding: 100px 0;
+    text-align: center; /* Center the text horizontally */
+    height: 100vh; /* Set height to viewport height */
+}
+
+
+.intro-excerpt {
+    margin-bottom: 30px;
+}
+
+.intro-excerpt h1 {
+    font-size: 2rem; /* Adjust font size */
+    color: #333;
+    letter-spacing: 2px; /* Increased spacing between letters */
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+}
+
+.intro-excerpt p {
+    color: #555;
+    margin-bottom: 15px; /* Increased spacing between paragraphs */
+}
+
+.hero-img-wrap {
+    text-align: center;
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust max-height */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0; /* Adjust padding */
+    }
+
+    .intro-excerpt h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="I-Fix.svg">
+    <link href="css/image-style.css" rel="stylesheet">
+    <title>I-Fix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="fas fa-chevron-left btn-back"></span> <!-- Menyatu dengan logo "Back" -->
+                <span class="logo-text">I-Fix</span> <!-- Teks "I-Fix" dengan warna putih -->
+            </a>
+        </div>
+    </nav>
+    <!-- End Header/Navigation -->
+
+    <!-- Start Hero Section -->
+    <div class="row">
+        <div class="wrapper">
+            <div class="container">
+                <div class="upload-container">
+                    <div class="border-container">
+                        <input type="file" id="fileInput" class="upload-input" style="display: none;">
+                        <label for="fileInput">
+                            <h1>Upload an Image</h1>
+                            <div class="icons fa-4x">
+                                <i class="fas fa-file-image" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+                            </div>
+                            <p>Drag and drop files here, or browse your computer.</p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Hero Section -->
+
+    <!-- Gambar akan muncul di sini -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <img id="uploadedImage" src="#" alt="Uploaded Image" style="display: none;">
+            </div>
+        </div>
+    </div>
+    <!-- End Gambar -->
+
+    <!-- Start Form resize -->
+    <div class="container" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div id="resizeForm">
+                    <div class="d-flex justify-content-between mt-2 text-center">
+                        <div class="col">
+                            <label for="width">Width:</label>
+                            <input type="number" id="width" name="width" value="200">
+                        </div>
+                        <div class="col">
+                            <label for="height">Height:</label>
+                            <input type="number" id="height" name="height" value="200">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-2">
+                        <input type="checkbox" id="lockAspectRatio">
+                        <label for="lockAspectRatio">Lock Aspect Ratio</label>
+                    </div>
+                    <div class="additional-buttons d-flex justify-content-center flex-wrap">
+                        <button onclick="resizeImage()" class="btn btn-secondary mb-4">Resize</button>
+                        <button onclick="blurImage()" class="btn btn-secondary mb-4">Blur</button>
+                        <button onclick="rotateImage()" class="btn btn-secondary mb-4">Rotate</button>
+                        <select class="filter-select btn btn-secondary mb-4 d-flex justify-content-center flex-wrap">
+                            <option value="none">No Filter</option>
+                            <option value="grayscale">Grayscale</option>
+                            <option value="sepia">Sepia</option>
+                            <option value="invert">Invert</option>
+                        </select>
+                    </div>
+                    <div class="download-button">
+                        <button onclick="dowloadImage()" class="btn btn-secondary mb-2" download>Download
+                            Image</button>
+                        <button onclick="reloadPage()" class="btn btn-secondary mb-2">Reload</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Form resize -->
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
